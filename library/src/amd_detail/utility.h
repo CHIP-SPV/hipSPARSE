@@ -442,7 +442,7 @@ namespace hipsparse
         case HIP_R_32I:
             return rocsparse_datatype_i32_r;
         case HIP_R_16F:
-            return rocsparse_datatype_f16_r;
+            throw "rocsparse_datatype_f16_r not supported in this rocSPARSE version";
         case HIP_R_32F:
             return rocsparse_datatype_f32_r;
         case HIP_R_64F:
@@ -464,8 +464,6 @@ namespace hipsparse
             return HIP_R_8I;
         case rocsparse_datatype_i32_r:
             return HIP_R_32I;
-        case rocsparse_datatype_f16_r:
-            return HIP_R_16F;
         case rocsparse_datatype_f32_r:
             return HIP_R_32F;
         case rocsparse_datatype_f64_r:
