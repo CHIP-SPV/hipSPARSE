@@ -668,7 +668,7 @@ namespace hipsparse
 struct hipsparseSpMVDescr_st
 {
 protected:
-    rocsparse_spmv_descr m_spmv_descr{};
+    rocsparse_spmat_descr m_spmv_descr{};
     bool                 m_is_stage_analysis_called{};
     bool                 m_is_implicit_stage_analysis_called{};
     size_t               m_buffer_size_stage_analysis{};
@@ -678,8 +678,8 @@ protected:
     bool                 m_is_buffer_size_called{};
 
 public:
-    rocsparse_spmv_descr get_spmv_descr();
-    void                 set_spmv_descr(rocsparse_spmv_descr value);
+    rocsparse_spmat_descr get_spmv_descr();
+    void                 set_spmv_descr(rocsparse_spmat_descr value);
 
     bool is_stage_analysis_called() const;
     void stage_analysis_called();
