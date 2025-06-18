@@ -33,12 +33,12 @@
 //
 // hipsparseSpMVDescr_st
 //
-rocsparse_spmv_descr hipsparseSpMVDescr_st::get_spmv_descr()
+rocsparse_spmat_descr hipsparseSpMVDescr_st::get_spmv_descr()
 {
     return this->m_spmv_descr;
 }
 
-void hipsparseSpMVDescr_st::set_spmv_descr(rocsparse_spmv_descr value)
+void hipsparseSpMVDescr_st::set_spmv_descr(rocsparse_spmat_descr value)
 {
     this->m_spmv_descr = value;
 }
