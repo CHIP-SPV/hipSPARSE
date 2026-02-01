@@ -27,6 +27,9 @@
 #include <hip/hip_complex.h>
 #include <hip/hip_runtime_api.h>
 #include <rocsparse/rocsparse.h>
+#include <cstring>
+#include <cstring>
+#include <cstring>
 
 #include "utility.h"
 

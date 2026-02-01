@@ -28,6 +28,7 @@
 #include <algorithm>
 #include <assert.h>
 #include <complex>
+#include <cstring>
 #include <hip/hip_runtime_api.h>
 #include <hipsparse/hipsparse.h>
 #include <math.h>
