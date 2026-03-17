@@ -30,6 +30,7 @@
 #ifndef DISPLAY_HPP
 #define DISPLAY_HPP
 
+#include <cstring>
 #include <fstream>
 #include <hip/hip_complex.h>
 #include <hip/hip_runtime_api.h>
