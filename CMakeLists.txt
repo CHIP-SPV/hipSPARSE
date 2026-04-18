@@ -184,6 +184,7 @@ if(BUILD_CLIENTS_SAMPLES OR BUILD_CLIENTS_TESTS OR BUILD_CLIENTS_BENCHMARKS)
   )
   endif()
   
+  enable_testing()
   add_subdirectory( clients )
 
   if(NOT WIN32)
