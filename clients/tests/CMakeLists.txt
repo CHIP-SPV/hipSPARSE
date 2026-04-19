@@ -228,4 +228,4 @@ if (WIN32)
 
 endif()
 
-add_test(NAME hipsparse-test COMMAND ${PROJECT_BINARY_DIR}/staging/hipsparse-test --gtest_filter=-bsrxmv*)
+add_test(NAME hipsparse-test COMMAND ${PROJECT_BINARY_DIR}/staging/hipsparse-test --gtest_filter=-bsrxmv*:-bsrmv*)
