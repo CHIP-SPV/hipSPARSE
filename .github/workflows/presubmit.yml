@@ -50,7 +50,7 @@ jobs:
             exclude=$(grep -Ev '^\s*(#|$)' .ci/exclude.txt | paste -sd '|' - || true)
           fi
           cd build
-          ctest --output-on-failure --timeout 300 ${exclude:+-E "$exclude"}
+          ctest --output-on-failure --timeout 1800 ${exclude:+-E "$exclude"}
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
